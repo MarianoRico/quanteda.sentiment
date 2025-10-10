@@ -72,7 +72,7 @@ The package comes with the following built-in dictionaries:
 | data_dictionary_LSD2015 | Lexicoder Sentiment Dictionary (2015) | ✔ |  |
 | data_dictionary_NRC | NRC Word-Emotion Association Lexicon | ✔ |  |
 | data_dictionary_Rauh | Rauh’s German Political Sentiment Dictionary | ✔ |  |
-| data_dictionary_sentiws | SentimentWortschatz (SentiWS) | ✔ | ✔ |
+| data_dictionary_sentiws | SentimentWortschatz (SentiWS 2.0) | ✔ | ✔ |
 
 ## Examples
 

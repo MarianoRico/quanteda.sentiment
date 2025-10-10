@@ -1,5 +1,6 @@
-# quanteda.sentiment 0.3
+# quanteda.sentiment 0.3x
 
+* Updated sentiWS to version 2.0 (#26)
 * Added data_dictionary_ANSW (Affective Norms for Spanish Words).
 * Tidied up some documentation and metadata issues (#16, #20)
 
@@ -12,6 +13,3 @@
 # quanteda.sentiment 0.1
 
 * Added a `NEWS.md` file to track changes to the package.
-
-
-
