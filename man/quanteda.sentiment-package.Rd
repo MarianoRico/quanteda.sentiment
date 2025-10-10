@@ -9,7 +9,12 @@
 Adds functions and dictionaries for computing sentiment using the 'quanteda' package.
 }
 \author{
-\strong{Maintainer}: Kenneth Benoit \email{kbenoit@lse.ac.uk} [copyright holder]
+\strong{Maintainer}: Kenneth Benoit \email{kbenoit@smu.edu.sg} (\href{https://orcid.org/0000-0002-0797-564X}{ORCID})
+
+Other contributors:
+\itemize{
+  \item Mariano Rico \email{mariano.rico@upm.es} (Contributor of Spanish emotion dictionary) [contributor]
+}
 
 }
 \keyword{internal}

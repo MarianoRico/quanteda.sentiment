@@ -330,3 +330,29 @@
 #' @keywords data
 "data_dictionary_LoughranMcDonald"
 
+#' Affective Norms for Spanish Words (ANSW)
+#'
+#' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the
+#' ANSW, or Affective Norms for Spanish Words (Hinojosa et al. 2016) valenced
+#' lexicon. The ANSW provides a lexicon of 875 distinct Spanish words that are
+#' associated with eight valenced categories: valence, arousal, concreteness,
+#' and five discrete emotional categories (happiness, anger, sadness, fear,
+#' and disgust).
+#' @format
+#' A [dictionary] with eight valenced keys: `valence`, `arousal`, `concreteness`,
+#' `happiness`, `anger`, `sadness`, `fearness`, and `disgust`, each containing
+#' the same 875 Spanish word values with associated valences.
+#' @references
+#'   Hinojosa, J.A., Martínez-García, N., Villalba-García, C., Fernández-Folgueiras,
+#'   U., & Sánchez-Carmona, A. (2016). Affective norms of 875 Spanish words for
+#'   five discrete emotional categories and two emotional dimensions.
+#'   *Behavior Research Methods*, 48, 272--284.
+#'   \doi{10.3758/s13428-015-0572-5}
+#' @source <https://link.springer.com/article/10.3758/s13428-015-0572-5>
+#' @section License:
+#' Unknown.
+#' @note This dictionary was created by Mariano Rico (mariano.rico@upm.es). For
+#'   questions about the dictionary data, please consult the original publication.
+#' @keywords data
+"data_dictionary_ANSW"
+

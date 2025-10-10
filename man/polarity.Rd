@@ -10,7 +10,7 @@ polarity(x)
 polarity(x) <- value
 }
 \arguments{
-\item{x}{a \link{dictionary} object}
+\item{x}{a \link[quanteda:dictionary]{quanteda::dictionary} object}
 
 \item{value}{list consisting of named character vectors \code{pos}, \code{neg}, and
 (optionally) \code{neut} corresponding to positive, negative, and neutral
@@ -24,7 +24,7 @@ supplied.}
 \verb{polarity<-} sets the dictionary's polarity.
 }
 \description{
-Set or retrieve the polarity of a \link{dictionary} object for the purposes of
+Set or retrieve the polarity of a \link[quanteda:dictionary]{quanteda::dictionary} object for the purposes of
 sentiment analysis.  Polarity consists of a set of dictionary keys that are
 associated with positive, negative, and (optionally) neutral categories for
 use in \code{\link[=textstat_polarity]{textstat_polarity()}}.

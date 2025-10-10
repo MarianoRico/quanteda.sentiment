@@ -1,3 +1,7 @@
+# quanteda.sentiment 0.3
+
+* Added data_dictionary_ANSW (Affective Norms for Spanish Words).
+
 # quanteda.sentiment 0.2x
 
 * Usability improvements
