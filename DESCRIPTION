@@ -1,6 +1,6 @@
 Package: quanteda.sentiment
 Title: Sentiment Analysis using 'quanteda'
-Version: 0.32
+Version: 0.34
 Authors@R: 
   c(
   person("Kenneth", "Benoit", email = "kbenoit@smu.edu.sg", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0797-564X")),
