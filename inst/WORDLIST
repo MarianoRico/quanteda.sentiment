@@ -18,6 +18,7 @@ Heyer
 Hinojosa
 Hu
 HuLiu
+ICWSM
 KDD
 Ks
 LREC
@@ -74,6 +75,7 @@ nichts
 pos
 quanteda
 rico
+sEntiment
 sentiWS
 sentiws
 textstat
@@ -81,6 +83,7 @@ th
 tibble
 tokenization
 upm
+vader
 valenced
 Å
 Årup

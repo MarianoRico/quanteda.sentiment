@@ -73,6 +73,7 @@ The package comes with the following built-in dictionaries:
 | data_dictionary_NRC | NRC Word-Emotion Association Lexicon | ✔ |  |
 | data_dictionary_Rauh | Rauh’s German Political Sentiment Dictionary | ✔ |  |
 | data_dictionary_sentiws | SentimentWortschatz (SentiWS 2.0) | ✔ | ✔ |
+| data_dictionary_vader | VADER (Valence Aware Dictionary and sEntiment Reasoner) |  | ✔ |
 
 ## Examples
 

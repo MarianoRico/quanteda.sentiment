@@ -56,6 +56,12 @@ test_that("dictionaries have polarities and valences set", {
     'Dictionary object with 2 key entries.\nPolarities: pos = "positive"; neg = "negative" \nValences set for keys: positive, negative ',
     fixed = TRUE
   )
+
+  expect_output(
+    print(data_dictionary_vader, 0, 0),
+    "Dictionary object with 1 key entry.\nValences set for keys: VADER.",
+    fixed = TRUE
+  )
 })
 
 test_that("dictionaries have metadata set", {
@@ -78,5 +84,6 @@ test_that("dictionaries have metadata set", {
   expect_true(meta_ok(data_dictionary_NRC))
   expect_true(meta_ok(data_dictionary_Rauh))
   expect_true(meta_ok(data_dictionary_sentiws))
+  expect_true(meta_ok(data_dictionary_vader))
 })
 

@@ -2,6 +2,7 @@
 
 * Updated sentiWS to version 2.0 (#26)
 * Added data_dictionary_ANSW (Affective Norms for Spanish Words).
+* Added VADER dictionary (#6)
 * Tidied up some documentation and metadata issues (#16, #20)
 
 # quanteda.sentiment 0.2x

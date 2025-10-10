@@ -363,3 +363,40 @@
 #' @keywords data
 "data_dictionary_ANSW"
 
+#' VADER Dictionary
+#'
+#' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the
+#' VADER (Valence Aware Dictionary and sEntiment Reasoner) lexicon, a
+#' rule-based sentiment analysis tool that is specifically attuned to
+#' sentiments expressed in social media.
+#'
+#' @details
+#' The VADER lexicon contains 7,506 distinct English words and emoticons rated
+#' for sentiment intensity. Each entry has an associated mean sentiment score
+#' ranging from -4 (extremely negative) to +4 (extremely positive).
+#'
+#' The original VADER lexicon contained 14 duplicate tokens (primarily
+#' emoticons such as ":-p"). For this implementation, duplicates were merged by
+#' combining their raw annotation scores and recomputing the mean sentiment and
+#' standard deviation from the combined values. This process reduced the
+#' dictionary from 7,520 to 7,506 unique entries.
+#'
+#' @format
+#' A [dictionary] with one valenced key, `VADER`, containing 7,506 word and
+#' emoticon patterns with associated sentiment scores ranging from -4 (extremely
+#' negative) to +4 (extremely positive).
+#'
+#' @references
+#'   Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model
+#'   for Sentiment Analysis of Social Media Text. *Eighth International
+#'   Conference on Weblogs and Social Media* (ICWSM-14). Ann Arbor, MI, June
+#'   2014. \doi{10.1609/icwsm.v8i1.14550}
+#'
+#' @source <https://github.com/cjhutto/vaderSentiment>
+#'
+#' @section License:
+#' [MIT License](https://opensource.org/licenses/MIT)
+#'
+#' @keywords data
+"data_dictionary_vader"
+
