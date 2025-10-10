@@ -22,10 +22,10 @@ read_senti_scores <- function(filename) {
     
 }
 
-positive <- read_senti_scores("sentiws/SentiWS_v1.8c_Positive.txt") %>% 
+positive <- read_senti_scores("sources/sentiws/SentiWS_v2.0_Positive.txt") %>% 
     mutate(sentiment = "positive") %>%
     unique()
-negative <- read_senti_scores("sentiws/SentiWS_v1.8c_Negative.txt") %>% 
+negative <- read_senti_scores("sources/sentiws/SentiWS_v2.0_Negative.txt") %>% 
     mutate(sentiment = "negative") %>%
     unique()
 sentis <- bind_rows(positive, negative)
@@ -41,7 +41,7 @@ valence(data_dictionary_sentiws) <-
 meta(data_dictionary_sentiws) <- 
     list(
         title = "SentimentWortschatz (SentiWS)",
-        description = "A quanteda dictionary object containing SentimentWortschatz (SentiWS), a publicly available German-language resource for sentiment analysis. The current version of SentiWS contains 1,650 positive and 1,818 negative words, which sum up to 15,649 positive and 15,632 negative word forms including their inflections. It not only contains adjectives and adverbs explicitly expressing a sentiment, but also nouns and verbs implicitly containing one. The original dictionary weights within the interval of -1 to 1. Note that the version implemented in quanteda.dictionaries uses a binary classification into positive (weight > 0) and negative (weight < 0) features.",
+        description = "SentimentWortschatz, or SentiWS for short, is a publicly available German-language resource for sentiment analysis, opinion mining etc. It lists positive and negative polarity bearing words weighted within the interval of [-1; 1] plus their part of speech tag, and if applicable, their inflections. The current version of SentiWS (v2.0) contains around 1,650 positive and 1,800 negative words, which sum up to around 16,000 positive and around 18,000 negative word forms incl. their inflections, respectively. It not only contains adjectives and adverbs explicitly expressing a sentiment, but also nouns and verbs implicitly containing one.",
         url = "http://wortschatz.uni-leipzig.de/en/download/",
         reference = "Remus, R., Quasthoff U., and Heyer, G. (2010). [SentiWS: a Publicly Available German-language Resource for Sentiment Analysis](http://www.lrec-conf.org/proceedings/lrec2010/pdf/490_Paper.pdf). In _Proceedings of the 7th International Language Ressources and Evaluation (LREC'10)_, 1168--1171.",
         license = "CC-BY-NC-SA 3.0"

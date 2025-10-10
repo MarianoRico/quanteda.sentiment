@@ -7,14 +7,14 @@
 get_polarity_dictionary(dictionary)
 }
 \arguments{
-\item{dictionary}{a \pkg{quanteda} \link{dictionary}}
+\item{dictionary}{a \pkg{quanteda} \link[quanteda:dictionary]{quanteda::dictionary}}
 }
 \value{
-a single-level \link{dictionary} with keys \code{pos}, \code{neg}, and (optionally)
+a single-level \link[quanteda:dictionary]{quanteda::dictionary} with keys \code{pos}, \code{neg}, and (optionally)
 \code{neut}.
 }
 \description{
-Checks and standardizes a \link{dictionary} object with its \link{polarity} set, so
+Checks and standardizes a \link[quanteda:dictionary]{quanteda::dictionary} object with its \link{polarity} set, so
 that the polarity categories are standardized into the keys \code{pos}, \code{neg}, and
 (optionally) \code{neut}.  Also checks that the dictionary contains all of the
 keys named in the polarity object.  (It is necessary to check here since the

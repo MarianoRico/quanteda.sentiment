@@ -61,17 +61,17 @@ sentiment. Each is implemented in a separate function:
 
 The package comes with the following built-in dictionaries:
 
-| Name                             | Description                                                   | Polarity | Valence |
-|:---------------------------------|:--------------------------------------------------------------|:--------:|:-------:|
-| data_dictionary_AFINN            | Nielsen’s (2011) ‘new ANEW’ valenced word list                |          |    ✔    |
-| data_dictionary_ANEW             | Affective Norms for English Words (ANEW)                      |          |    ✔    |
-| data_dictionary_geninqposneg     | Augmented General Inquirer *Positiv* and *Negativ* dictionary |    ✔     |         |
-| data_dictionary_HuLiu            | Positive and negative words from Hu and Liu (2004)            |    ✔     |         |
-| data_dictionary_LoughranMcDonald | Loughran and McDonald Sentiment Word Lists                    |    ✔     |         |
-| data_dictionary_LSD2015          | Lexicoder Sentiment Dictionary (2015)                         |    ✔     |         |
-| data_dictionary_NRC              | NRC Word-Emotion Association Lexicon                          |    ✔     |         |
-| data_dictionary_Rauh             | Rauh’s German Political Sentiment Dictionary                  |    ✔     |         |
-| data_dictionary_sentiws          | SentimentWortschatz (SentiWS)                                 |    ✔     |    ✔    |
+| Name | Description | Polarity | Valence |
+|:---|:---|:--:|:--:|
+| data_dictionary_AFINN | Nielsen’s (2011) ‘new ANEW’ valenced word list |  | ✔ |
+| data_dictionary_ANEW | Affective Norms for English Words (ANEW) |  | ✔ |
+| data_dictionary_geninqposneg | Augmented General Inquirer *Positiv* and *Negativ* dictionary | ✔ |  |
+| data_dictionary_HuLiu | Positive and negative words from Hu and Liu (2004) | ✔ |  |
+| data_dictionary_LoughranMcDonald | Loughran and McDonald Sentiment Word Lists | ✔ |  |
+| data_dictionary_LSD2015 | Lexicoder Sentiment Dictionary (2015) | ✔ |  |
+| data_dictionary_NRC | NRC Word-Emotion Association Lexicon | ✔ |  |
+| data_dictionary_Rauh | Rauh’s German Political Sentiment Dictionary | ✔ |  |
+| data_dictionary_sentiws | SentimentWortschatz (SentiWS 2.0) | ✔ | ✔ |
 
 ## Examples
 
@@ -81,10 +81,10 @@ categories from the General Inquirer dictionary:
 ``` r
 library("quanteda.sentiment")
 ## Loading required package: quanteda
-## Package version: 4.0.0
+## Package version: 4.3.1
 ## Unicode version: 14.0
 ## ICU version: 71.1
-## Parallel computing: 10 of 10 threads used.
+## Parallel computing: disabled
 ## See https://quanteda.io for tutorials and examples.
 ## 
 ## Attaching package: 'quanteda.sentiment'
@@ -105,12 +105,12 @@ print(data_dictionary_geninqposneg, max_nval = 8)
 tail(data_corpus_inaugural) |>
   textstat_polarity(dictionary = data_dictionary_geninqposneg)
 ##       doc_id sentiment
-## 1  2001-Bush 0.9233579
-## 2  2005-Bush 0.9829457
-## 3 2009-Obama 0.5666378
-## 4 2013-Obama 0.7597420
-## 5 2017-Trump 0.7724428
-## 6 2021-Biden 0.6018714
+## 1  2005-Bush 0.9829457
+## 2 2009-Obama 0.5666378
+## 3 2013-Obama 0.7597420
+## 4 2017-Trump 0.7724428
+## 5 2021-Biden 0.6018714
+## 6 2025-Trump 0.8589711
 ```
 
 For a valence dictionary, we can compute this for the “pleasure”
@@ -147,12 +147,12 @@ lapply(valence(data_dictionary_ANEW), head, 8)
 tail(data_corpus_inaugural) |>
   textstat_valence(dictionary = data_dictionary_ANEW["pleasure"])
 ##       doc_id sentiment
-## 1  2001-Bush  6.091330
-## 2  2005-Bush  6.308839
-## 3 2009-Obama  5.841437
-## 4 2013-Obama  6.045129
-## 5 2017-Trump  6.223944
-## 6 2021-Biden  6.018528
+## 1  2005-Bush  6.308839
+## 2 2009-Obama  5.841437
+## 3 2013-Obama  6.045129
+## 4 2017-Trump  6.223944
+## 5 2021-Biden  6.018528
+## 6 2025-Trump  6.074136
 ```
 
 We can compare two measures computed in different ways (although they

@@ -5,7 +5,7 @@
 \alias{data_dictionary_LSD2015}
 \title{Lexicoder Sentiment Dictionary (2015)}
 \format{
-A \link{dictionary} of four keys containing glob-style \link[=valuetype]{pattern matches}.
+A \link[quanteda:dictionary]{quanteda::dictionary} of four keys containing glob-style \link[quanteda:valuetype]{pattern matches}.
 \describe{
 \item{\code{negative}}{2,858 word patterns indicating negative sentiment}
 \item{\code{positive}}{1,709 word patterns indicating positive sentiment}
@@ -19,7 +19,7 @@ by a negation (used to convey positive sentiment)}
 data_dictionary_LSD2015
 }
 \description{
-The 2015 Lexicoder Sentiment Dictionary in \pkg{quanteda} \link{dictionary}
+The 2015 Lexicoder Sentiment Dictionary in \pkg{quanteda} \link[quanteda:dictionary]{quanteda::dictionary}
 format.
 }
 \details{

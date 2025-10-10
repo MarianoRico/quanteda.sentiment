@@ -1,3 +1,7 @@
+# quanteda.sentiment 0.3x
+
+* Updated sentiWS to version 2.0 (#26)
+
 # quanteda.sentiment 0.2x
 
 * Usability improvements

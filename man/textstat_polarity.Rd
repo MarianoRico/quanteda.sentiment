@@ -7,10 +7,10 @@
 textstat_polarity(x, dictionary, fun = sent_logit, ...)
 }
 \arguments{
-\item{x}{a character, \link{corpus}, \link{tokens}, or \link{dfm} object containing
+\item{x}{a character, \link[quanteda:corpus]{quanteda::corpus}, \link[quanteda:tokens]{quanteda::tokens}, or \link[quanteda:dfm]{quanteda::dfm} object containing
 text, tokens, or features whose sentiment will be scored}
 
-\item{dictionary}{a \link{dictionary} that has \link{polarity} set, indicating which
+\item{dictionary}{a \link[quanteda:dictionary]{quanteda::dictionary} that has \link{polarity} set, indicating which
 keys are associated with positive, negative, and (optionally) neutral
 sentiment}
 
