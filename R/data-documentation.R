@@ -244,7 +244,14 @@
 #' A [dictionary] with three valenced keys: `pleasure`, `arousal`, and
 #' `dominance`, each with valences from 1 to 9 and containing the same 2,471
 #' fixed word values.
+#' @source <https://csea.phhp.ufl.edu/media.html#bottommedia>
+#' @references
+#'   Bradley, M.M. & Lang, P.J. (2017). Affective Norms for English Words
+#'   (ANEW): Instruction manual and affective ratings. Technical Report C-3.
+#'   Gainesville, FL:UF Center for the Study of Emotion and Attention.
 #' @section License:
+#' For non-profit academic research purposes.
+#' 
 #' ANEW Statement of Use
 #' 
 #' In accepting the ANEW materials, I agree not to make the ANEW available to
