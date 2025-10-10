@@ -1,8 +1,17 @@
 Package: quanteda.sentiment
 Title: Sentiment Analysis using 'quanteda'
+<<<<<<< HEAD
 Version: 0.35
 Authors@R: c( person("Kenneth", "Benoit", email = "kbenoit@lse.ac.uk", role =
     c("aut", "cre", "cph")) )
+=======
+Version: 0.32
+Authors@R: 
+  c(
+  person("Kenneth", "Benoit", email = "kbenoit@smu.edu.sg", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0797-564X")),
+    person("Mariano", "Rico", email = "mariano.rico@upm.es", role = "ctb", comment = "Contributor of Spanish emotion dictionary")
+  )
+>>>>>>> master
 Description: Adds functions and dictionaries for computing sentiment using the 'quanteda' package.
 Depends:
   R (>= 4.1.0),

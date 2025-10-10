@@ -69,24 +69,40 @@ test_that("textstat_valence with individual value scores works", {
     sad = c("sad" = -1, "morose" = -2, "down" = -1),
     okay = c("just okay" = 0.5, "okay" = 5)
   )
-  txt <- c(d1 = "sad word happy word exuberant",
-           d2 = "down sad just okay",
-           d3 = "sad happy word word")
+  txt <- c(d1 = "sad word happy word exuberant", # -1 1 2    =  0.66667
+           d2 = "down sad just okay",            # -1 -1 0.5 = -0.5
+           d3 = "sad happy word word")           # -1 1      =  0.0
+  
+  expected_answer <- structure(list(doc_id = c("d1", "d2", "d3"), 
+                                    sentiment = c(2/3, -0.5, 0)), 
+                               row.names = c(NA, -3L), class = "data.frame")
+  expect_equal(
+    expected_answer,
+    data.frame(
+      doc_id = c("d1", "d2", "d3"),
+      sentiment = sapply(list(c(-1, 1, 2), 
+                c(-1, -1, 0.5),
+                c(-1, 1)), 
+           mean)           
+    )
+  )
   
   corp <- corpus(txt)
-  toks <- tokens(corp) %>%
-    tokens_compound(dict, concatenator = " ")
+  toks <- tokens(corp)
   dfmat <- dfm(toks)
-    
+
   expect_identical(
     textstat_valence(corp, dict),
-    textstat_valence(toks, dict)
-  )
-  expect_identical(
-    textstat_valence(corp, dict),
-    textstat_valence(dfmat, dict)
+    textstat_valence(toks, dict),
+    expected_answer
   )
   
+  # dfm does not compound tokens in lookup
+  expect_identical(
+    c(2/3, 1, 0),
+    textstat_valence(dfmat, dict)$sentiment
+  )
+
   sent <- c((-1 + 1 + 2)   / 3, # 5
             (-1 - 1 + 0.5) / 3,
             (-1 + 1)       / 2) # 4

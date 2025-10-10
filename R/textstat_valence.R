@@ -81,6 +81,7 @@ textstat_valence.tokens <- function(x, dictionary,
   valence(dictionary) <- set_valences(dictionary, valence(dictionary))
   numdict <- dictionary(as.list(flip_valence(dictionary)))
   quanteda::as.tokens(x) |>
+    # tokens_compound(dictionary, concatenator = " ") |>
     tokens_lookup(dictionary = numdict, nomatch = "other",
                   nested_scope = "dictionary") |>
     dfm() |>

@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/quanteda.sentiment)](https://cran.r-project.org/package=quanteda.sentiment)
-[![](https://img.shields.io/badge/devel%20version-0.31-royalblue.svg)](https://github.com/quanteda/quanteda.sentiment)
+[![](https://img.shields.io/badge/devel%20version-0.32-royalblue.svg)](https://github.com/quanteda/quanteda.sentiment)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Codecov test
@@ -65,6 +65,7 @@ The package comes with the following built-in dictionaries:
 |:---|:---|:--:|:--:|
 | data_dictionary_AFINN | Nielsen’s (2011) ‘new ANEW’ valenced word list |  | ✔ |
 | data_dictionary_ANEW | Affective Norms for English Words (ANEW) |  | ✔ |
+| data_dictionary_ANSW | Affective Norms for Spanish Words (ANSW) |  | ✔ |
 | data_dictionary_geninqposneg | Augmented General Inquirer *Positiv* and *Negativ* dictionary | ✔ |  |
 | data_dictionary_HuLiu | Positive and negative words from Hu and Liu (2004) | ✔ |  |
 | data_dictionary_LoughranMcDonald | Loughran and McDonald Sentiment Word Lists | ✔ |  |
