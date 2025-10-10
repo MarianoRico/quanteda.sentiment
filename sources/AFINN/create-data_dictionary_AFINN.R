@@ -2,8 +2,8 @@
 
 library("quanteda")
 
-afinn111 <- read.delim("AFINN/AFINN-111.txt", header = FALSE, col.names = c("word", "valence"))
-afinn96 <- read.delim("AFINN/AFINN-96.txt", header = FALSE, col.names = c("word", "valence"))
+afinn111 <- read.delim("AFINN-111.txt", header = FALSE, col.names = c("word", "valence"))
+afinn96 <- read.delim("AFINN-96.txt", header = FALSE, col.names = c("word", "valence"))
 
 afinn111 <- dplyr::arrange(afinn111, word)
 afinn96 <- dplyr::arrange(afinn96, word)
@@ -20,8 +20,8 @@ meta(data_dictionary_AFINN) <- list(
   license = "This database of words is copyright protected and distributed under the Open Database License (ODbL) v1.0, https://www.opendatacommons.org/licenses/odbl/1.0/"
 )
 
-meta(data_dictionary_AFINN) <-
-  lapply(meta(data_dictionary_AFINN), function(x) Encoding(x) <- "UTF-8")
+# meta(data_dictionary_AFINN) <-
+#   lapply(meta(data_dictionary_AFINN), function(x) Encoding(x) <- "UTF-8")
 
 usethis::use_data(data_dictionary_AFINN, overwrite = TRUE)
 
