@@ -70,7 +70,7 @@ test_that("different sentiment functions work as expected", {
              1 - 0,
              0 - 0,
              1 - 0,
-             2 - 0) / unname(ntoken(tokens(x)))
+             2 - 0) / unname(ntoken(tokens(txt)))
     expect_equal(
         apd,
         textstat_polarity(txt, dictionary = data_dictionary_LSD2015,
