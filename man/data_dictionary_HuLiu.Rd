@@ -5,7 +5,7 @@
 \alias{data_dictionary_HuLiu}
 \title{Positive and negative words from Hu and Liu (2004)}
 \format{
-A \link{dictionary} of fixed word patterns with two keys:
+A \link[quanteda:dictionary]{quanteda::dictionary} of fixed word patterns with two keys:
 \itemize{
 \item \code{positive}: 2,006 words with positive polarity
 \item \code{negative}: 4,783 words with negative polarity

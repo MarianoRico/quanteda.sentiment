@@ -12,10 +12,10 @@ textstat_valence(
 )
 }
 \arguments{
-\item{x}{a character, \link{corpus}, \link{tokens}, or \link{dfm} object containing
+\item{x}{a character, \link[quanteda:corpus]{quanteda::corpus}, \link[quanteda:tokens]{quanteda::tokens}, or \link[quanteda:dfm]{quanteda::dfm} object containing
 text, tokens, or features whose sentiment will be scored.}
 
-\item{dictionary}{a \pkg{quanteda} \link{dictionary} that has \link{valence} set, in
+\item{dictionary}{a \pkg{quanteda} \link[quanteda:dictionary]{quanteda::dictionary} that has \link{valence} set, in
 the form of numerical valences associated with sentiment}
 
 \item{normalization}{the baseline for normalizing the sentiment counts after
@@ -34,8 +34,8 @@ Compute sentiment scores from tokens or document-feature matrices, based on
 the valences of dictionary keys and values.
 }
 \note{
-If the input item is a \link{dfm}, then multi-word values will not be matched
-unless the features of the \link{dfm} have been compounded previously.  The input
+If the input item is a \link[quanteda:dfm]{quanteda::dfm}, then multi-word values will not be matched
+unless the features of the \link[quanteda:dfm]{quanteda::dfm} have been compounded previously.  The input
 objects should not have had dictionaries applied previously.
 }
 \examples{

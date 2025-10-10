@@ -5,7 +5,7 @@
 \alias{data_dictionary_AFINN}
 \title{Nielsen's (2011) 'new ANEW' valenced word list}
 \format{
-A \link{dictionary} with one key, \code{AFINN}, with valences from -5 (negative) to +5
+A \link[quanteda:dictionary]{quanteda::dictionary} with one key, \code{AFINN}, with valences from -5 (negative) to +5
 (positive).
 }
 \source{

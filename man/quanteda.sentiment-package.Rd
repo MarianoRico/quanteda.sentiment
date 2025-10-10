@@ -9,7 +9,7 @@
 Adds functions and dictionaries for computing sentiment using the 'quanteda' package.
 }
 \author{
-\strong{Maintainer}: Kenneth Benoit \email{kbenoit@lse.ac.uk} [copyright holder]
+\strong{Maintainer}: Kenneth Benoit \email{kbenoit@smu.edu.sg} [copyright holder]
 
 }
 \keyword{internal}
