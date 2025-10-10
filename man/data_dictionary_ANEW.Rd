@@ -9,6 +9,9 @@ A \link[quanteda:dictionary]{quanteda::dictionary} with three valenced keys: \co
 \code{dominance}, each with valences from 1 to 9 and containing the same 2,471
 fixed word values.
 }
+\source{
+\url{https://csea.phhp.ufl.edu/media.html#bottommedia}
+}
 \usage{
 data_dictionary_ANEW
 }
@@ -19,6 +22,8 @@ lexicon of 2,471 distinct fixed word matches that are associated with three
 valenced categories: pleasure, arousal, and dominance.
 }
 \section{License}{
+
+For non-profit academic research purposes.
 
 ANEW Statement of Use
 
@@ -31,4 +36,9 @@ and I agree not to distribute my username and password to unauthorized
 parties.
 }
 
+\references{
+Bradley, M.M. & Lang, P.J. (2017). Affective Norms for English Words
+(ANEW): Instruction manual and affective ratings. Technical Report C-3.
+Gainesville, FL:UF Center for the Study of Emotion and Attention.
+}
 \keyword{data}
