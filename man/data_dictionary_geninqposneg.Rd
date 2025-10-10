@@ -5,7 +5,7 @@
 \alias{data_dictionary_geninqposneg}
 \title{Augmented General Inquirer \emph{Positiv} and \emph{Negativ} dictionary}
 \format{
-A \link{dictionary} of fixed word patterns with two keys:
+A \link[quanteda:dictionary]{quanteda::dictionary} of fixed word patterns with two keys:
 \itemize{
 \item \code{positive}: 1,653 words with positive polarity
 \item \code{negative}: 2,010 words with negative polarity

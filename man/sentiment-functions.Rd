@@ -14,7 +14,7 @@ sent_abspropdiff(x)
 sent_relpropdiff(x)
 }
 \arguments{
-\item{x}{a \link{dfm} that has the following required feature names: \code{pos},
+\item{x}{a \link[quanteda:dfm]{quanteda::dfm} that has the following required feature names: \code{pos},
 \code{neg}, \code{neut}, and \code{other}}
 
 \item{smooth}{additional smoothing function added to \code{pos} and \code{neg} before
@@ -27,7 +27,7 @@ will not be used by \code{\link[=textstat_polarity]{textstat_polarity()}}.)
 }
 \description{
 Functions for computing sentiment, for \code{\link[=textstat_polarity]{textstat_polarity()}}.  Each function
-takes an input \link{dfm} with fixed feature names (see Details), and returns a
+takes an input \link[quanteda:dfm]{quanteda::dfm} with fixed feature names (see Details), and returns a
 sparse Matrix with a single column representing the results of the sentiment
 calculation.
 

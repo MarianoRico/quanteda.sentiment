@@ -31,7 +31,7 @@ numeric element matches a value within that key.
 \verb{valence<-} sets the dictionary's valences.
 }
 \description{
-Set or retrieve the valences of a \link{dictionary} object for the purposes of
+Set or retrieve the valences of a \link[quanteda:dictionary]{quanteda::dictionary} object for the purposes of
 sentiment analysis.  Valences consist of numerical values attached to each
 dictionary "value".  For dictionaries with a more "polarity"-based approach,
 see \code{\link[=textstat_polarity]{textstat_polarity()}}
