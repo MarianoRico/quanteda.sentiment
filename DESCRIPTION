@@ -4,7 +4,7 @@ Version: 0.34
 Authors@R: 
   c(
   person("Kenneth", "Benoit", email = "kbenoit@smu.edu.sg", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-0797-564X")),
-  person("Mariano", "Rico", email = "mariano.rico@upm.es", role = "ctb", comment = "Contributor of Spanish emotion dictionary")
+  person("Mariano", "Rico", email = "mariano.rico@upm.es", role = "ctb", comment = c(ORCID = "0000-0001-5878-8521", "Contributor of Spanish emotion dictionary"))
   )
 Description: Adds functions and dictionaries for computing sentiment using the 'quanteda' package.
 Depends:

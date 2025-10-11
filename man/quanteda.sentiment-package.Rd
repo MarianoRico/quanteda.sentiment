@@ -13,7 +13,7 @@ Adds functions and dictionaries for computing sentiment using the 'quanteda' pac
 
 Other contributors:
 \itemize{
-  \item Mariano Rico \email{mariano.rico@upm.es} (Contributor of Spanish emotion dictionary) [contributor]
+  \item Mariano Rico \email{mariano.rico@upm.es} (\href{https://orcid.org/0000-0001-5878-8521}{ORCID}) (Contributor of Spanish emotion dictionary) [contributor]
 }
 
 }
