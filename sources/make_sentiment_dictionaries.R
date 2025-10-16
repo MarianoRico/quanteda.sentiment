@@ -11,6 +11,7 @@ source("Loughran-McDonald/create-data_dictionary_LoughranMcDonald.R")
 source("NRC/create_data_dictionary-NRC.R")
 source("Rauh/create-data_dictionary_Rauh.R")
 source("sentiws/create-data_dictionary_sentiws.R")
+source("Chen2014/create-data_dictionary_Chen2014.R")
 
 ## not sentiment dictionaries
 # source("Laver-Garry/create-data_dictionary_LaverGarry.R")
