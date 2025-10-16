@@ -6,6 +6,9 @@
 #Leo ficheros positive_words_es.txt y negative_words_es.txt
 pos_words <- readLines("positive_words_es.txt") #1555 words
 neg_words <- readLines("negative_words_es.txt") #2720 words
+
+library(quanteda) #To know what is a dictionary
+library(quanteda.sentiment) #To know what is polarity()  
 data_dictionary_Chen2014 <- dictionary(list(neg = neg_words,
                                             pos = pos_words))
 polarity(data_dictionary_Chen2014) <- list(neg = "neg", pos = "pos")
