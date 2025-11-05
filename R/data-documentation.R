@@ -363,6 +363,24 @@
 #' @keywords data
 "data_dictionary_ANSW"
 
+#' Spanish polar dictionary (Chen2014)
+#'
+#' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing positive
+#' and negative words for the Spanish language. The dictionary provides 1555 positive 
+#' words and 2720 negative words. The dataset can be found in Kaggle.
+#' @format
+#' A [dictionary] with two keys: `pos`, and `neg`.
+#' @references
+#' Chen, Y., & Skiena, S. (2014). Building Sentiment Lexicons for All Major 
+#' Languages. In ACL (2) (pp. 383-389).
+#' @source <https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages>
+#' @section License:
+#' Unknown.
+#' @note This dictionary was created by Mariano Rico (mariano.rico@upm.es). For
+#'   questions about the dictionary data, please consult the original publication.
+#' @keywords data
+"data_dictionary_Chen2014"
+
 #' VADER Dictionary
 #'
 #' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the
