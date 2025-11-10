@@ -371,8 +371,8 @@
 #' @format
 #' A [dictionary] with two keys: `pos`, and `neg`.
 #' @references
-#' Chen, Y., & Skiena, S. (2014). Building Sentiment Lexicons for All Major 
-#' Languages. In ACL (2) (pp. 383-389).
+#'   Chen, Y., & Skiena, S. (2014). Building Sentiment Lexicons for All Major 
+#'   Languages. In ACL (2) (pp. 383-389).
 #' @source <https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages>
 #' @section License:
 #' Unknown.
