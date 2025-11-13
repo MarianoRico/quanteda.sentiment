@@ -374,6 +374,21 @@
 #'    tk tl tr uk ur uz vi vo wa yi zh
 #' @format
 #' For a given language xx, a [dictionary] with two keys: `xx_pos`, and `xx_neg`.
+#' @examples
+#' library("quanteda.sentiment")
+#' # Tests for 4 Spain languages
+#' # Test for es
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "es_neg", pos = "es_pos")
+#' textstat_polarity("prueba rápida", dictionary = data_dictionary_ChenSkiena2014) #1.098612
+#' # Test for ca
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "ca_neg", pos = "ca_pos")
+#' textstat_polarity("prova ràpida", dictionary = data_dictionary_ChenSkiena2014) #1.098612
+#' # Test for ga
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "ga_neg", pos = "ga_pos")
+#' textstat_polarity("proba rápida", dictionary = data_dictionary_ChenSkiena2014) #0
+#' # Test for eu
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "eu_neg", pos = "eu_pos")
+#' textstat_polarity("proba azkarra", dictionary = data_dictionary_ChenSkiena2014) #1.098612
 #' @references 
 #' Chen, Yanqing and Steven Skiena. (2014) "Building sentiment lexicons for all
 #' major languages." In _Proceedings of the 52nd annual meeting of the
