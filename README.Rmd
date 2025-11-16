@@ -52,6 +52,7 @@ The package comes with the following built-in dictionaries:
 | data_dictionary_AFINN            | Nielsen's (2011) 'new ANEW' valenced word list                |          |    ✔    |
 | data_dictionary_ANEW             | Affective Norms for English Words (ANEW)                      |          |    ✔    |
 | data_dictionary_ANSW             | Affective Norms for Spanish Words (ANSW)                      |          |    ✔    |
+| data_dictionary_ChenSkiena2014   | Chen and Skiena (2014) sentiment dictionaries for 81 non-English languages  |     ✔    |         |
 | data_dictionary_geninqposneg     | Augmented General Inquirer _Positiv_ and _Negativ_ dictionary |     ✔    |         |
 | data_dictionary_HuLiu            | Positive and negative words from Hu and Liu (2004)            |     ✔    |         |
 | data_dictionary_LoughranMcDonald | Loughran and McDonald Sentiment Word Lists                    |     ✔    |         |
