@@ -337,10 +337,10 @@
 #' @keywords data
 "data_dictionary_LoughranMcDonald"
 
-#' Affective Norms for Spanish Words (ANSW)
+#' Affective Norms for Spanish Words (ANSW) 2016
 #'
 #' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the
-#' ANSW, or Affective Norms for Spanish Words (Hinojosa et al. 2016) valenced
+#' ANSW 2016, or Affective Norms for Spanish Words (Hinojosa et al. 2016) valenced
 #' lexicon. The ANSW provides a lexicon of 875 distinct Spanish words that are
 #' associated with eight valenced categories: valence, arousal, concreteness,
 #' and five discrete emotional categories (happiness, anger, sadness, fear,
@@ -361,7 +361,33 @@
 #' @note This dictionary was created by Mariano Rico (mariano.rico@upm.es). For
 #'   questions about the dictionary data, please consult the original publication.
 #' @keywords data
-"data_dictionary_ANSW"
+"data_dictionary_ANSW2016"
+
+#' Affective Norms for Spanish Words (ANSW) 2018
+#'
+#' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the
+#' ANSW 2018, or Affective Norms for Spanish Words (Stadthagen-González H. et al.) valenced
+#' lexicon. The ANSW 2018 provides a lexicon of 10,491 distinct Spanish words (x10 2016 version) that are
+#' associated with seven (2006 version was for eight) valenced categories: valence, arousal,
+#' and five discrete emotional categories (happiness, anger, sadness, fear,
+#' and disgust).
+#' @format
+#' A [dictionary] with seven valenced keys: `valence`, `arousal`,
+#' `happiness`, `anger`, `sadness`, `fearness`, and `disgust`, each containing
+#' the same 10,491 Spanish word values with associated valences.
+#' @references
+#'   Stadthagen-González, H., Ferré, P., Pérez-Sánchez, M.A. et al. Norms 
+#'   for 10,491 Spanish words for five discrete emotions: Happiness, disgust, 
+#'   anger, fear, and sadness.
+#'   *Behavior Reseach Methods* 50, 1943–1952. 
+#'   \doi{10.3758/s13428-017-0962-y}
+#' @source <https://link.springer.com/article/10.3758/s13428-017-0962-y>
+#' @section License:
+#' For non-profit academic research purposes.
+#' @note This dictionary was created by Mariano Rico (mariano.rico@upm.es). For
+#'   questions about the dictionary data, please consult the original publication.
+#' @keywords data
+"data_dictionary_ANSW2018"
 
 #' Chen and Skiena's (2014) sentiment dictionaries for 81 languages
 #'
