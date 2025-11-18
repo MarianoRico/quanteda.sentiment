@@ -368,7 +368,7 @@
 #' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the
 #' ANSW 2018, or Affective Norms for Spanish Words (Stadthagen-González H. et al.) valenced
 #' lexicon. The ANSW 2018 provides a lexicon of 10,491 distinct Spanish words (x10 2016 version) that are
-#' associated with seven (2006 version was for eight) valenced categories: valence, arousal,
+#' associated with seven (the 2016 version was for eight) valenced categories: valence, arousal,
 #' and five discrete emotional categories (happiness, anger, sadness, fear,
 #' and disgust).
 #' @format
