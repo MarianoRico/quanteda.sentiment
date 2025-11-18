@@ -363,6 +363,146 @@
 #' @keywords data
 "data_dictionary_ANSW"
 
+#' Chen and Skiena's (2014) sentiment dictionaries for 81 languages
+#'
+#' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing
+#' positive and negative words for 81 (non-English) languages. The dataset can
+#' be found in Kaggle (as well as referenced from the original publication
+#' page).
+#' 
+#' The languages are:
+#' 
+#' | **Code** | **Language** |
+#' |------|----------|
+#' | af | Afrikaans |
+#' | an | Aragonese |
+#' | ar | Arabic |
+#' | az | Azerbaijani |
+#' | be | Belarusian |
+#' | bg | Bulgarian |
+#' | bn | Bengali |
+#' | br | Breton |
+#' | bs | Bosnian |
+#' | ca | Catalan; Valencian |
+#' | cs | Czech |
+#' | cy | Welsh |
+#' | da | Danish |
+#' | de | German |
+#' | el | Greek, Modern |
+#' | eo | Esperanto |
+#' | es | Spanish; Castilian |
+#' | et | Estonian |
+#' | eu | Basque |
+#' | fa | Persian |
+#' | fi | Finnish |
+#' | fo | Faroese |
+#' | fr | French |
+#' | fy | Western Frisian |
+#' | ga | Irish |
+#' | gd | Scottish Gaelic; Gaelic |
+#' | gl | Galician |
+#' | gu | Gujarati |
+#' | he | Hebrew (modern) |
+#' | hi | Hindi |
+#' | hr | Croatian |
+#' | ht | Haitian; Haitian Creole |
+#' | hu | Hungarian |
+#' | hy | Armenian |
+#' | ia | Interlingua |
+#' | id | Indonesian |
+#' | io | Ido |
+#' | is | Icelandic |
+#' | it | Italian |
+#' | ka | Georgian |
+#' | km | Khmer |
+#' | kn | Kannada |
+#' | ko | Korean |
+#' | ku | Kurdish |
+#' | ky | Kirghiz, Kyrgyz |
+#' | la | Latin |
+#' | lb | Luxembourgish, Letzeburgesch |
+#' | lt | Lithuanian |
+#' | lv | Latvian |
+#' | mk | Macedonian |
+#' | mr | Marathi (Marāṭhī) |
+#' | ms | Malay |
+#' | mt | Maltese |
+#' | nl | Dutch |
+#' | nn | Norwegian Nynorsk |
+#' | no | Norwegian |
+#' | pl | Polish |
+#' | pt | Portuguese |
+#' | rm | Romansh |
+#' | ro | Romanian, Moldavian, Moldovan |
+#' | ru | Russian |
+#' | sk | Slovak |
+#' | sl | Slovene |
+#' | sq | Albanian |
+#' | sr | Serbian |
+#' | sv | Swedish |
+#' | sw | Swahili |
+#' | ta | Tamil |
+#' | te | Telugu |
+#' | th | Thai |
+#' | tk | Turkmen |
+#' | tl | Tagalog |
+#' | tr | Turkish |
+#' | uk | Ukrainian |
+#' | ur | Urdu |
+#' | uz | Uzbek |
+#' | vi | Vietnamese |
+#' | vo | Volapük |
+#' | wa | Walloon |
+#' | yi | Yiddish |
+#' | zh | Chinese |
+#' | zhw | Chinese (characters and words) |
+#' 
+#' @format
+#' For a given language xx, a [dictionary][quanteda::dictionary] with two keys: `xx_pos`, and `xx_neg`, where `xx` is the two-character language code, corresponding to the ISO 3166-1 A-2 standard.
+#' @examples
+#' library("quanteda.sentiment")
+#' # Tests for 4 Spain languages
+#' 
+#' # Test for Spanish
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "es_neg", pos = "es_pos")
+#' textstat_polarity("Hay que ser cruel para ser amable.", 
+#'                   dictionary = data_dictionary_ChenSkiena2014) 
+#' ##   doc_id sentiment
+#' ## 1  text1 0.5108256
+#' 
+#' # Test for Catalan
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "ca_neg", pos = "ca_pos")
+#' textstat_polarity("Cal ser cruel per ser amable.", 
+#'                   dictionary = data_dictionary_ChenSkiena2014)
+#' ##   doc_id sentiment
+#' ## 1  text1 0.5108256
+#' 
+#' # Test for Basque
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "eu_neg", pos = "eu_pos")
+#' textstat_polarity("Krudel izan behar da atsegina izateko.", 
+#'                   dictionary = data_dictionary_ChenSkiena2014)
+#' ##   doc_id sentiment
+#' ## 1  text1  1.098612
+#' 
+#' # Test for Galician
+#' polarity(data_dictionary_ChenSkiena2014) <- list(neg = "gl_neg", pos = "gl_pos")
+#' textstat_polarity("Hai que ser cruel para ser amable.", 
+#'                   dictionary = data_dictionary_ChenSkiena2014)
+#' ##   doc_id sentiment
+#' ## 1  text1 0.5108256
+#' @references 
+#' Chen, Yanqing and Steven Skiena. (2014) "Building sentiment lexicons for all
+#' major languages." In _Proceedings of the 52nd annual meeting of the
+#' Association for Computational Linguistics_ (volume 2: short papers), pp.
+#' 383-389. \doi{10.3115/v1/P14-2063}
+#' @source <https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages>
+#' @section License:
+#' [GPL-3](https://www.gnu.org/licenses/gpl-3.0.html).
+#' @note This dictionary was created by Mariano Rico (mariano.rico@upm.es). For
+#'   questions about the dictionary data, please consult the original publication.
+#' @keywords data
+"data_dictionary_ChenSkiena2014"
+
 #' VADER Dictionary
 #'
 #' A \pkg{quanteda} [dictionary][quanteda::dictionary] object containing the

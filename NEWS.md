@@ -1,3 +1,7 @@
+# quanteda.sentiment 0.4x
+
+* Added Chen and Skiena (2014) with 81 languages in a polar sentiment dictionary
+
 # quanteda.sentiment 0.3x
 
 * Updated sentiWS to version 2.0 (#26)
