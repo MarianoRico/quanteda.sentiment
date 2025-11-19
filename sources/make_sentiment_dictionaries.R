@@ -4,7 +4,7 @@ library("quanteda")
 
 source("AFINN/create-data_dictionary_AFINN.R")
 source("ANEW/create-data_dictionary_ANEW.R")
-source("ANEW/create-data_dictionary_ANSW.R")
+source("ANEW/create-data_dictionary_ANSW2016.R")
 source("ANEW/create-data_dictionary_ANSW2018.R")
 source("geninquirer/create-data_dictionary_geninquirer.R")
 source("Hu-Liu/create_data_dictionary-HuLiu.R")

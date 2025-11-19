@@ -1,6 +1,8 @@
 # quanteda.sentiment 0.4x
 
 * Added Chen and Skiena (2014) with 81 languages in a polar sentiment dictionary
+* Added data_dictionary_ANSW2016 and data_dictionary_ANSW2016 (Affective Norms for Spanish Words 2016 and 2018).
+
 
 # quanteda.sentiment 0.3x
 
