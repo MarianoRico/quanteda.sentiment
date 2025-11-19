@@ -379,7 +379,7 @@
 #'   Stadthagen-González, H., Ferré, P., Pérez-Sánchez, M.A. et al. Norms 
 #'   for 10,491 Spanish words for five discrete emotions: Happiness, disgust, 
 #'   anger, fear, and sadness.
-#'   *Behavior Reseach Methods* 50, 1943–1952. 
+#'   *Behavior Research Methods* 50, 1943–1952. 
 #'   \doi{10.3758/s13428-017-0962-y}
 #' @source <https://link.springer.com/article/10.3758/s13428-017-0962-y>
 #' @section License:
